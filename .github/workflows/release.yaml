@@ -1,0 +1,23 @@
+name: Release module
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@main
+      with:
+        type: 'zip'
+        filename: 'dex_feature_enabler.zip'
+        exclusions: '*.git* update.json README.md'
+    - name: Upload Release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "dex_feature_enabler.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,7 @@
+id=dex_feature_enabler
+name=DeX Feature Enabler
+version=1.0
+versionCode=1
+author=yukkerike
+description=Patches floating_feature.xml to enable Samsung DeX mode on inner display.
+updateJson=https://raw.githubusercontent.com/yukkerike/dex_feature_enabler/main/update.json
