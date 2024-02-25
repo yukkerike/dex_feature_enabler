@@ -3,7 +3,7 @@ ui_print
 
 print_done_message () {
     ui_print "Requirements met, avoiding abortion."
-    ui_print "We won't patch XML right now, patch will apply duting every boot."
+    ui_print "We won't patch XML right now, patch will apply during each boot."
     ui_print "Reinstalling this module after firmware updates won't be needed."
     ui_print
     ui_print "[DONE]"
