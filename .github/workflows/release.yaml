@@ -13,7 +13,6 @@ jobs:
     - name: Archive Release
       uses: thedoctor0/zip-release@main
       with:
-        type: 'zip'
         filename: 'dex_feature_enabler.zip'
         exclusions: '*.git* update.json README.md'
     - name: Upload Release
