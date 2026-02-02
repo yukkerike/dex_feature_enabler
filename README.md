@@ -1,3 +1,7 @@
+# No longer works with the new DeX on One UI 8+!
+
+---
+
 # DeX Feature Enabler
 Модуль Magisk для включения режима Samsung DeX на внутренних дисплеях устройств серии Galaxy Fold.
 
